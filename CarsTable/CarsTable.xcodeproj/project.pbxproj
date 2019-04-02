@@ -15,6 +15,7 @@
 		B81968932253FD71001CBDE1 /* CarsTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81968922253FD71001CBDE1 /* CarsTableTests.swift */; };
 		B819689E2253FD71001CBDE1 /* CarsTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B819689D2253FD71001CBDE1 /* CarsTableUITests.swift */; };
 		B81968AC2253FDEE001CBDE1 /* Cars.json in Resources */ = {isa = PBXBuildFile; fileRef = B81968AB2253FDEE001CBDE1 /* Cars.json */; };
+		B81968AE2253FEB7001CBDE1 /* ProtocolCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B819689D2253FD71001CBDE1 /* CarsTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableUITests.swift; sourceTree = "<group>"; };
 		B819689F2253FD71001CBDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81968AB2253FDEE001CBDE1 /* Cars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cars.json; sourceTree = "<group>"; };
+		B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolCars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B81968862253FD70001CBDE1 /* LaunchScreen.storyboard */,
 				B81968892253FD70001CBDE1 /* Info.plist */,
 				B81968AB2253FDEE001CBDE1 /* Cars.json */,
+				B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */,
 			);
 			path = CarsTable;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				B81968802253FD6F001CBDE1 /* ViewController.swift in Sources */,
 				B819687E2253FD6F001CBDE1 /* AppDelegate.swift in Sources */,
+				B81968AE2253FEB7001CBDE1 /* ProtocolCars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

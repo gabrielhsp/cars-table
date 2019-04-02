@@ -14,7 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    // var nomeDoCarro: String = "" {
+    // didSet {
+    //      self.imgViewComida.image = UIImage(named: nomeDoCarro)
+    // }
+    // }
 
 }
 
