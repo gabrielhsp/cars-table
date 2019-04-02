@@ -1,0 +1,33 @@
+{
+    "carros": [{
+        "nome": "F430",
+        "fabrica": "Ferrari",
+        "cor": "vermelho",
+        "imagem": "ferrari"
+    },
+    {
+        "nome": "Veyron",
+        "fabrica": "Buggati",
+        "cor": "azul",
+        "imagem": "veyron"
+    },
+    {
+        "nome": "Etios",
+        "fabrica": "Toytota",
+        "cor": "branco",
+        "imagem": "etios"
+    },
+    {
+        "nome": "TTS",
+        "fabrica": "Audi",
+        "cor": "laranja",
+        "imagem": "tts"
+    },
+    {
+        "nome": "Model S",
+        "fabrica": "Tesla",
+        "cor": "preto",
+        "imagem": "modelS"
+    }
+    ]
+}
