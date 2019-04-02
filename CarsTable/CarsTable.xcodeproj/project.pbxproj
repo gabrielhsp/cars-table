@@ -16,6 +16,8 @@
 		B819689E2253FD71001CBDE1 /* CarsTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B819689D2253FD71001CBDE1 /* CarsTableUITests.swift */; };
 		B81968AC2253FDEE001CBDE1 /* Cars.json in Resources */ = {isa = PBXBuildFile; fileRef = B81968AB2253FDEE001CBDE1 /* Cars.json */; };
 		B81968AE2253FEB7001CBDE1 /* ProtocolCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */; };
+		B8B9E85B22541F3600B0C0FF /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9E85922541F3600B0C0FF /* CarsTableViewCell.swift */; };
+		B8B9E85C22541F3600B0C0FF /* CarsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B9E85A22541F3600B0C0FF /* CarsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B819689F2253FD71001CBDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81968AB2253FDEE001CBDE1 /* Cars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cars.json; sourceTree = "<group>"; };
 		B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolCars.swift; sourceTree = "<group>"; };
+		B8B9E85922541F3600B0C0FF /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
+		B8B9E85A22541F3600B0C0FF /* CarsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				B81968892253FD70001CBDE1 /* Info.plist */,
 				B81968AB2253FDEE001CBDE1 /* Cars.json */,
 				B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */,
+				B8B9E85922541F3600B0C0FF /* CarsTableViewCell.swift */,
+				B8B9E85A22541F3600B0C0FF /* CarsTableViewCell.xib */,
 			);
 			path = CarsTable;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 				B81968852253FD70001CBDE1 /* Assets.xcassets in Resources */,
 				B81968AC2253FDEE001CBDE1 /* Cars.json in Resources */,
 				B81968832253FD6F001CBDE1 /* Main.storyboard in Resources */,
+				B8B9E85C22541F3600B0C0FF /* CarsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +272,7 @@
 			files = (
 				B81968802253FD6F001CBDE1 /* ViewController.swift in Sources */,
 				B819687E2253FD6F001CBDE1 /* AppDelegate.swift in Sources */,
+				B8B9E85B22541F3600B0C0FF /* CarsTableViewCell.swift in Sources */,
 				B81968AE2253FEB7001CBDE1 /* ProtocolCars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
