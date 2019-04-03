@@ -56,8 +56,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let valueOfSelectedCar = arrayCarsList[indexPath.row].carPrice
-        let alert = UIAlertController(title: "Carro", message: valueOfSelectedCar, preferredStyle: .alert)
+        let valueOfSelectedCar = arrayCarsList[indexPath.row]
+        
+        let alert = UIAlertController(title: valueOfSelectedCar.carName, message: "Fabricante: \(valueOfSelectedCar.carManufacturer ?? "") \n Cor: \(valueOfSelectedCar.carColor ?? "") \n Valor: \(valueOfSelectedCar.carPrice ?? "")", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         
