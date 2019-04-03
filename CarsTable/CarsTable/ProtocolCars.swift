@@ -42,4 +42,13 @@ struct CarsAttribute: Decodable {
         case carColor = "cor"
         case carImage = "imagem"
     }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        carName = try values.decodeIfPresent(String.self, forKey: .carName)
+        carManufacturer = try values.decodeIfPresent(String.self, forKey: .carManufacturer)
+        carColor = try values.decodeIfPresent(String.self, forKey: .carColor)
+        carImage = try values.decodeIfPresent(String.self, forKey: .carImage)
+    }
 }
