@@ -35,12 +35,14 @@ struct CarsAttribute: Decodable {
     var carManufacturer: String?
     var carColor: String?
     var carImage: String?
+    var carPrice: String?
     
     enum CodingKeys: String, CodingKey {
         case carName = "nome"
         case carManufacturer = "fabrica"
         case carColor = "cor"
         case carImage = "imagem"
+        case carPrice = "valor"
     }
     
     init(from decoder: Decoder) throws {
@@ -50,5 +52,6 @@ struct CarsAttribute: Decodable {
         carManufacturer = try values.decodeIfPresent(String.self, forKey: .carManufacturer)
         carColor = try values.decodeIfPresent(String.self, forKey: .carColor)
         carImage = try values.decodeIfPresent(String.self, forKey: .carImage)
+        carPrice = try values.decodeIfPresent(String.self, forKey: .carPrice)
     }
 }

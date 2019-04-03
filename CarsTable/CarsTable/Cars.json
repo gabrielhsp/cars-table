@@ -3,31 +3,36 @@
         "nome": "F430",
         "fabrica": "Ferrari",
         "cor": "vermelho",
-        "imagem": "ferrari"
+        "imagem": "ferrari",
+        "valor": "R$ 4.000.00,00"
     },
     {
         "nome": "Veyron",
         "fabrica": "Buggati",
         "cor": "azul",
-        "imagem": "veyron"
+        "imagem": "veyron",
+        "valor": "R$ 2.598.00,00"
     },
     {
         "nome": "Etios",
         "fabrica": "Toytota",
         "cor": "branco",
-        "imagem": "etios"
+        "imagem": "etios",
+        "valor": "R$ 3.908.23,00"
     },
     {
         "nome": "TTS",
         "fabrica": "Audi",
         "cor": "laranja",
-        "imagem": "tts"
+        "imagem": "tts",
+        "valor": "R$ 9.088.22,00"
     },
     {
         "nome": "Model S",
         "fabrica": "Tesla",
         "cor": "preto",
-        "imagem": "modelS"
+        "imagem": "modelS",
+        "valor": "R$ 4.598.00,00"
     }
     ]
 }

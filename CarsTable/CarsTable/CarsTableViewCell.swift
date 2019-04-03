@@ -14,6 +14,7 @@ class CarsTableViewCell: UITableViewCell {
     @IBOutlet weak var labelCarManufacture: UILabel!
     
     var carColor: String?
+    var carPrice: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
