@@ -19,12 +19,15 @@ class DetailsCarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.setValuesForViewAtrributes()
+        self.setBackgroundForView(carColor: Colors(rawValue: (detailsCarAtrributes?.carColor)!)!)
+    }
+    
+    func setValuesForViewAtrributes() {
         self.imageViewCar.image = UIImage(named: detailsCarAtrributes?.carImage ?? "")!
         self.labelCarName.text = detailsCarAtrributes?.carName
         self.labelCarManufacturer.text = detailsCarAtrributes?.carManufacturer
         self.labelCarValue.text = detailsCarAtrributes?.carPrice
-        
-        self.setBackgroundForView(carColor: Colors(rawValue: (detailsCarAtrributes?.carColor)!)!)
     }
     
     func setBackgroundForView(carColor: Colors) {
@@ -48,16 +51,4 @@ class DetailsCarViewController: UIViewController {
             self.view.backgroundColor = UIColor.white
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
