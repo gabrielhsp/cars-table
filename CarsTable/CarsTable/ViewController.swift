@@ -19,9 +19,6 @@ class ViewController: UIViewController {
         tableViewCarsList.delegate = self
         tableViewCarsList.dataSource = self
         
-        let cellNib = UINib(nibName: "CarsTableViewCell", bundle: nil)
-        tableViewCarsList.register(cellNib, forCellReuseIdentifier: "carsCell")
-        
         self.arrayCarsList = self.returnArrayOfCars()
     }
     
@@ -31,6 +28,13 @@ class ViewController: UIViewController {
         let allCarsList = CarsList.parse(jsonData)
         
         return allCarsList.carsList
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinySegue = segue.destination as? DetailsCarViewController
+        let dataCars = sender as? CarsAttribute
+        
+        destinySegue?.detailsCarAtrributes = (dataCars)!
     }
 }
 
@@ -44,24 +48,16 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "carsCell") as! CarsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celulaNova")
         
-        cell.setupCarsCell(carsAttribute: arrayCarsList[indexPath.row])
+        cell?.textLabel?.text = arrayCarsList[indexPath.row].carName
         
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 145
+        return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let valueOfSelectedCar = arrayCarsList[indexPath.row]
+        let dataCars = arrayCarsList[indexPath.row]
         
-        let alert = UIAlertController(title: valueOfSelectedCar.carName, message: "Fabricante: \(valueOfSelectedCar.carManufacturer ?? "") \n Cor: \(valueOfSelectedCar.carColor ?? "") \n Valor: \(valueOfSelectedCar.carPrice ?? "")", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        
-        self.present(alert, animated: true, completion: nil)
+       self.performSegue(withIdentifier: "segueCarsInformation", sender: dataCars)
     }
 }

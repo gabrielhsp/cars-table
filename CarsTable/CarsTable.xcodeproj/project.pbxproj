@@ -18,6 +18,8 @@
 		B81968AE2253FEB7001CBDE1 /* ProtocolCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */; };
 		B8B9E85B22541F3600B0C0FF /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9E85922541F3600B0C0FF /* CarsTableViewCell.swift */; };
 		B8B9E85C22541F3600B0C0FF /* CarsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B9E85A22541F3600B0C0FF /* CarsTableViewCell.xib */; };
+		B8B9E89A225517C900B0C0FF /* DetailsCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9E899225517C900B0C0FF /* DetailsCarViewController.swift */; };
+		B8B9E89E2255223200B0C0FF /* Enumerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9E89D2255223200B0C0FF /* Enumerators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolCars.swift; sourceTree = "<group>"; };
 		B8B9E85922541F3600B0C0FF /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
 		B8B9E85A22541F3600B0C0FF /* CarsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsTableViewCell.xib; sourceTree = "<group>"; };
+		B8B9E899225517C900B0C0FF /* DetailsCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCarViewController.swift; sourceTree = "<group>"; };
+		B8B9E89D2255223200B0C0FF /* Enumerators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				B81968AD2253FEB7001CBDE1 /* ProtocolCars.swift */,
 				B8B9E85922541F3600B0C0FF /* CarsTableViewCell.swift */,
 				B8B9E85A22541F3600B0C0FF /* CarsTableViewCell.xib */,
+				B8B9E899225517C900B0C0FF /* DetailsCarViewController.swift */,
+				B8B9E89D2255223200B0C0FF /* Enumerators.swift */,
 			);
 			path = CarsTable;
 			sourceTree = "<group>";
@@ -272,8 +278,10 @@
 			files = (
 				B81968802253FD6F001CBDE1 /* ViewController.swift in Sources */,
 				B819687E2253FD6F001CBDE1 /* AppDelegate.swift in Sources */,
+				B8B9E89A225517C900B0C0FF /* DetailsCarViewController.swift in Sources */,
 				B8B9E85B22541F3600B0C0FF /* CarsTableViewCell.swift in Sources */,
 				B81968AE2253FEB7001CBDE1 /* ProtocolCars.swift in Sources */,
+				B8B9E89E2255223200B0C0FF /* Enumerators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
