@@ -9,13 +9,17 @@
 import UIKit
 
 class DetailsCarViewController: UIViewController {
+    // MARK: - Outlets
     @IBOutlet weak var imageViewCar: UIImageView!
     @IBOutlet weak var labelCarName: UILabel!
     @IBOutlet weak var labelCarManufacturer: UILabel!
     @IBOutlet weak var labelCarValue: UILabel!
     
+    // MARK: - Variables
+    /** Variable that receives the cars attribute */
     var detailsCarAtrributes: CarsAttribute?
     
+    // MARK: - DidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +27,8 @@ class DetailsCarViewController: UIViewController {
         self.setBackgroundForView(carColor: Colors(rawValue: (detailsCarAtrributes?.carColor)!)!)
     }
     
+    // MARK: - Methods
+    /**  */
     func setValuesForViewAtrributes() {
         self.imageViewCar.image = UIImage(named: detailsCarAtrributes?.carImage ?? "")!
         self.labelCarName.text = detailsCarAtrributes?.carName
